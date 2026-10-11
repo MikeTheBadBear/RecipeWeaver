@@ -1,0 +1,24 @@
+name: RecipeWeaver
+main: dev.recipeweaver.core.RecipeWeaverPlugin
+version: '${version}'
+api-version: '1.20.6'
+description: In-game custom recipe studio and recipe book.
+author: TM Game Studio
+softdepend: [ItemsAdder, Oraxen, MMOItems, MythicMobs, PlaceholderAPI]
+commands:
+  rw:
+    description: RecipeWeaver main command
+    usage: /rw [studio|create|recipes|settings|table|give|reload|lockdown|backup|backups|restore|info]
+    aliases: [recipeweaver]
+  recipes:
+    description: Open the RecipeWeaver recipe book
+    usage: /recipes
+permissions:
+  recipeweaver.studio:
+    default: op
+  recipeweaver.recipes:
+    default: true
+  recipeweaver.admin:
+    default: op
+  recipeweaver.give:
+    default: op

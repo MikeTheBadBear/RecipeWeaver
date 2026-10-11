@@ -1,0 +1,50 @@
+[
+  {
+    "Package": "org.xerial:sqlite-jdbc",
+    "Version": "3.53.4.0",
+    "Vulnerabilities": [],
+    "NextPageToken": null
+  },
+  {
+    "Package": "com.h2database:h2",
+    "Version": "2.5.250",
+    "Vulnerabilities": [],
+    "NextPageToken": null
+  },
+  {
+    "Package": "com.mysql:mysql-connector-j",
+    "Version": "26.7.0",
+    "Vulnerabilities": [],
+    "NextPageToken": null
+  },
+  {
+    "Package": "org.mariadb.jdbc:mariadb-java-client",
+    "Version": "3.5.10",
+    "Vulnerabilities": [],
+    "NextPageToken": null
+  },
+  {
+    "Package": "org.postgresql:postgresql",
+    "Version": "42.7.13",
+    "Vulnerabilities": [],
+    "NextPageToken": null
+  },
+  {
+    "Package": "com.microsoft.sqlserver:mssql-jdbc",
+    "Version": "13.6.0.jre11",
+    "Vulnerabilities": [],
+    "NextPageToken": null
+  },
+  {
+    "Package": "com.oracle.database.jdbc:ojdbc11",
+    "Version": "23.26.3.0.0",
+    "Vulnerabilities": [],
+    "NextPageToken": null
+  },
+  {
+    "Package": "org.slf4j:slf4j-api",
+    "Version": "2.0.17",
+    "Vulnerabilities": [],
+    "NextPageToken": null
+  }
+]

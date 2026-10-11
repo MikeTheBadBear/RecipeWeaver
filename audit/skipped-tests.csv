@@ -1,0 +1,23 @@
+"Suite","Test","Reason","Type"
+"dev.recipeweaver.core.GridRecipeTest","gridResultCopiesMatchedIngredientNameAndLoreWithoutChangingTemplate()","be.seeseemelk.mockbukkit.UnimplementedOperationException: Not implemented","be.seeseemelk.mockbukkit.UnimplementedOperationException"
+"dev.recipeweaver.core.ItemDataRuleTest","nameCopyIncludesItemNameAndClearsAbsentNames()","be.seeseemelk.mockbukkit.UnimplementedOperationException: Not implemented","be.seeseemelk.mockbukkit.UnimplementedOperationException"
+"dev.recipeweaver.core.ItemDataRuleTest","commonResultCopyReplacesAttributeModifiersAndKeepsTheTemplate()","be.seeseemelk.mockbukkit.UnimplementedOperationException: Not implemented","be.seeseemelk.mockbukkit.UnimplementedOperationException"
+"dev.recipeweaver.core.ItemDataRuleTest","customDataCopyReplacesTemplateKeysAndClearsThemForAnEmptySource()","be.seeseemelk.mockbukkit.UnimplementedOperationException: Not implemented","be.seeseemelk.mockbukkit.UnimplementedOperationException"
+"dev.recipeweaver.core.ItemDataRuleTest","writableBookPagesCanBeEditedCopiedAndCleared()","be.seeseemelk.mockbukkit.UnimplementedOperationException: Not implemented","be.seeseemelk.mockbukkit.UnimplementedOperationException"
+"dev.recipeweaver.core.ItemDataRuleTest","customDataCopyCarriesTypedListsAcrossMaterialsWithoutMutatingInputs()","be.seeseemelk.mockbukkit.UnimplementedOperationException: Not implemented","be.seeseemelk.mockbukkit.UnimplementedOperationException"
+"dev.recipeweaver.core.ItemDataRuleTest","headNoteSoundResultCopyReplacesAndClearsTheTemplate()","be.seeseemelk.mockbukkit.UnimplementedOperationException: Not implemented","be.seeseemelk.mockbukkit.UnimplementedOperationException"
+"dev.recipeweaver.core.ItemDataRuleTest","commonResultCopyTransfersFoodPropertiesAndClearsTemplateFood()","be.seeseemelk.mockbukkit.UnimplementedOperationException: Not implemented","be.seeseemelk.mockbukkit.UnimplementedOperationException"
+"dev.recipeweaver.core.ItemDataRuleTest","commonResultCopyKeepsLegacyModelDataAndClearsMissingSourceData()","be.seeseemelk.mockbukkit.UnimplementedOperationException: Not implemented","be.seeseemelk.mockbukkit.UnimplementedOperationException"
+"dev.recipeweaver.core.ItemDraftEditorTest","toolPropertiesAndSingleBlockRuleCanBeEditedWithoutDamagingOtherRules()","be.seeseemelk.mockbukkit.UnimplementedOperationException: Not implemented","be.seeseemelk.mockbukkit.UnimplementedOperationException"
+"dev.recipeweaver.core.ItemDraftEditorTest","foodPropertiesAndEffectsCanBeAddedReplacedAndRemoved()","be.seeseemelk.mockbukkit.UnimplementedOperationException: Not implemented","be.seeseemelk.mockbukkit.UnimplementedOperationException"
+"dev.recipeweaver.core.ItemDraftEditorTest","itemComponentControlsCycleAndValidateIndependently()","be.seeseemelk.mockbukkit.UnimplementedOperationException: Not implemented","be.seeseemelk.mockbukkit.UnimplementedOperationException"
+"dev.recipeweaver.core.ItemDraftEditorTest","potionBaseAndCustomEffectsAreEditableWithoutLosingColor()","be.seeseemelk.mockbukkit.UnimplementedOperationException: Not implemented","be.seeseemelk.mockbukkit.UnimplementedOperationException"
+"dev.recipeweaver.core.ItemRuleExpansionTest","headSoundSelectorIgnoresNameButChecksSoundKey()","be.seeseemelk.mockbukkit.UnimplementedOperationException: Not implemented","be.seeseemelk.mockbukkit.UnimplementedOperationException"
+"dev.recipeweaver.core.ItemRuleExpansionTest","headSoundCopyReplacesAndClearsOnlySoundKey()","be.seeseemelk.mockbukkit.UnimplementedOperationException: Not implemented","be.seeseemelk.mockbukkit.UnimplementedOperationException"
+"dev.recipeweaver.core.NativeCraftGuardTest","crafterRemaindersAcceptCompactOrFullLayoutsAndRejectForgedItems()","be.seeseemelk.mockbukkit.UnimplementedOperationException: Not implemented","be.seeseemelk.mockbukkit.UnimplementedOperationException"
+"dev.recipeweaver.core.RecipeDefinitionTest","stationResultMetadataCopiesActualInputAndSchemaSevenValidatesItsSource()","be.seeseemelk.mockbukkit.UnimplementedOperationException: Not implemented","be.seeseemelk.mockbukkit.UnimplementedOperationException"
+"dev.recipeweaver.core.RemoteSqlIntegrationTest","oracleApplicationSnapshotRestoreAndLiveMirrorRoundTrip()",,
+"dev.recipeweaver.core.RemoteSqlIntegrationTest","postgresqlApplicationSnapshotRestoreAndLiveMirrorRoundTrip()",,
+"dev.recipeweaver.core.RemoteSqlIntegrationTest","mysqlApplicationSnapshotRestoreAndLiveMirrorRoundTrip()",,
+"dev.recipeweaver.core.RemoteSqlIntegrationTest","sqlServerApplicationSnapshotRestoreAndLiveMirrorRoundTrip()",,
+"dev.recipeweaver.core.RemoteSqlIntegrationTest","mariaDbDriverAgainstMySqlRoundTrip()",,

@@ -1,0 +1,62 @@
+> Task :check UP-TO-DATE
+> Task :api:compileJava UP-TO-DATE
+> Task :adapters:compileJava UP-TO-DATE
+> Task :adapters:processResources NO-SOURCE
+> Task :adapters:classes UP-TO-DATE
+> Task :adapters:jar UP-TO-DATE
+> Task :adapters:compileTestJava NO-SOURCE
+> Task :adapters:processTestResources NO-SOURCE
+> Task :adapters:testClasses UP-TO-DATE
+> Task :api:processResources NO-SOURCE
+> Task :api:classes UP-TO-DATE
+> Task :api:jar UP-TO-DATE
+> Task :adapters:test NO-SOURCE
+> Task :adapters:check UP-TO-DATE
+> Task :api:compileTestJava NO-SOURCE
+> Task :api:processTestResources NO-SOURCE
+> Task :api:testClasses UP-TO-DATE
+> Task :api:test NO-SOURCE
+> Task :api:check UP-TO-DATE
+
+> Task :core:compileJava
+
+> Task :core:processResources UP-TO-DATE
+> Task :core:classes
+Note: C:\Users\Fixit\Documents\ChatGPT\22\core\src\main\java\dev\recipeweaver\core\StudioMenus.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+> Task :core:jar
+
+> Task :core:compileTestJava
+
+> Task :core:processTestResources NO-SOURCE
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+> Task :core:testClasses
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.sqlite.SQLiteJDBCLoader in an unnamed module (file:/C:/Users/Fixit/.gradle/caches/modules-2/files-2.1/org.xerial/sqlite-jdbc/3.53.4.0/47e21dd53efe1524fe0df6965cb65003ffe17172/sqlite-jdbc-3.53.4.0.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+> Task :core:test
+> Task :core:check
+> Task :smoke:compileJava UP-TO-DATE
+> Task :smoke:processResources UP-TO-DATE
+> Task :smoke:classes UP-TO-DATE
+> Task :smoke:jar UP-TO-DATE
+> Task :smoke:compileTestJava NO-SOURCE
+> Task :smoke:processTestResources NO-SOURCE
+> Task :smoke:testClasses UP-TO-DATE
+> Task :smoke:test NO-SOURCE
+> Task :smoke:check UP-TO-DATE
+> Task :verifyBuildJar
+
+[Incubating] Problems report is available at: file:///C:/Users/Fixit/Documents/ChatGPT/22/audit/build/RecipeWeaver/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.7.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 23s
+13 actionable tasks: 5 executed, 8 up-to-date

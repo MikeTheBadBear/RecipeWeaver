@@ -1,0 +1,2 @@
+RUN paper-1.20.6
+PASS paper-1.20.6: API, grids, cauldron, brewing, auto-crafter, reload, lockdown, backup/restore, shutdown save

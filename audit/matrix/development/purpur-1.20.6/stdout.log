@@ -1,0 +1,460 @@
+Starting org.bukkit.craftbukkit.Main
+System Info: Java 21 (OpenJDK 64-Bit Server VM 21.0.12.1+1-LTS) Host: Windows 11 10.0 (amd64)
+Loading libraries, please wait...
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+[14:41:07 INFO]: [PluginRemapper] Remapping plugin 'plugins\RecipeWeaver-3.7.jar'...
+[14:41:12 INFO]: [PluginRemapper] Done remapping plugin 'plugins\RecipeWeaver-3.7.jar' in 5514ms.
+[14:41:18 INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[14:41:19 INFO]: Loaded 1175 recipes
+[14:41:19 INFO]: Loaded 1276 advancements
+[14:41:19 INFO]: Starting minecraft server version 1.20.6
+[14:41:19 INFO]: Loading properties
+[14:41:20 INFO]: This server is running Purpur version 1.20.6-2233-ver/1.20.6@0d6766e (2024-06-18T04:01:10Z) (Implementing API version 1.20.6-R0.1-SNAPSHOT)
+[14:41:20 INFO]: Using 4 threads for Netty based IO
+[14:41:20 INFO]: Server Ping Player Sample Count: 12
+[14:41:21 INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 6 worker threads, and gen parallelism of 6 threads
+[14:41:21 INFO]: Default game type: SURVIVAL
+[14:41:21 INFO]: Generating keypair
+[14:41:21 INFO]: Starting Minecraft server on *:0
+[14:41:21 INFO]: Using default channel type
+[14:41:21 INFO]: Paper: Using Java compression from Velocity.
+[14:41:21 INFO]: Paper: Using Java cipher from Velocity.
+[14:41:22 INFO]: [RecipeWeaver] Loading server plugin RecipeWeaver v3.7
+[14:41:22 INFO]: [spark] Loading server plugin spark v1.10.192
+[14:41:22 INFO]: [RecipeWeaverSmoke] Loading server plugin RecipeWeaverSmoke v3.7
+[14:41:22 INFO]: Server permissions file permissions.yml is empty, ignoring it
+[14:41:22 WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[14:41:22 WARN]: The server will make no attempt to authenticate usernames. Beware.
+[14:41:22 WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[14:41:22 WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[14:41:22 INFO]: Preparing level "world"
+[14:41:22 INFO]: Preparing start region for dimension minecraft:overworld
+[14:41:23 INFO]: Time elapsed: 752 ms
+[14:41:23 INFO]: Preparing start region for dimension minecraft:the_nether
+[14:41:23 INFO]: Time elapsed: 185 ms
+[14:41:23 INFO]: Preparing start region for dimension minecraft:the_end
+[14:41:23 INFO]: Time elapsed: 122 ms
+[14:41:23 INFO]: [RecipeWeaver] Enabling RecipeWeaver v3.7
+[14:41:24 WARN]: [RecipeWeaver] No cancellable crafter craft event: exact or condition-dependent workbench recipes are unavailable natively on this server
+[14:41:24 INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[14:41:26 INFO]: [RecipeWeaver] Selected SQLITE SQL startup source matches local data
+[14:41:27 INFO]: [RecipeWeaver] Startup loaded local data; read policy PREFER_SQL_AT_STARTUP
+[14:41:27 INFO]: [RecipeWeaver] Loaded 10 workbench and 28 station and 32 grid recipes on Purpur 1.20.6
+[14:41:27 INFO]: [spark] Enabling spark v1.10.192
+[14:41:27 INFO]: [spark] Using Paper ServerTickStartEvent for tick monitoring
+[14:41:27 INFO]: [spark] Starting background profiler...
+[14:41:27 INFO]: [spark] The async-profiler engine is not supported for your os/arch (windows11/amd64), so the built-in Java engine will be used instead.
+[14:41:28 INFO]: [RecipeWeaverSmoke] Enabling RecipeWeaverSmoke v3.7
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_ITEM_PROVIDER_PASS
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_SQL_MIRROR_PRIOR_SAVED=true
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_MULTI_SQL_PRIOR_SAVED=true
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_SQL_RECOVERY_PRIOR_SAVED=false
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_SQL_PREFERENCE_PRIOR_SAVED=false
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_GRID_SHIFT_PRIOR_SAVED=true
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_GRID_COOLDOWN_PRIOR_SAVED=true
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_GRID_METADATA_PRIOR_SAVED=true
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_FULL_ITEM_DATA_GRID_PRIOR_SAVED=true
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_GRID_CRAFT_LIMIT_PRIOR_SAVED=true
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_REMOTE_SQL_PRIOR_SAVED=true
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_SMOKE_PRIOR_SAVED=true
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_NATIVE_BOOK_PRIOR_SAVED=true
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_NATIVE_CATEGORY_PRIOR_SAVED=true
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_WORKBENCH_CHOICES_PRIOR_SAVED=true
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_STATION_CHOICES_PRIOR_SAVED=true
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_STATION_METADATA_PRIOR_SAVED=true
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_FULL_ITEM_DATA_STATION_PRIOR_SAVED=true
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_STATION_INGREDIENTS_PRIOR_SAVED=true
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_STATION_OPTIONAL_PRIOR_SAVED=true
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_STATION_WEIGHTED_PRIOR_SAVED=true
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_NATIVE_SMITHING_GUARD_PRIOR_SAVED=true
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_STATION_RULES_PRIOR_SAVED=true
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_GRID_PRIOR_SAVED=true
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_GRID_AMOUNT_PRIOR_SAVED=true
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_GRID_OPTIONS_PRIOR_SAVED=true
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_GRID_CHOICES_PRIOR_SAVED=true
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_GRID_RESULTS_PRIOR_SAVED=true
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_GRID_USES_PRIOR_SAVED=true
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_GRID_CONDITIONS_PRIOR_SAVED=true
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_GRID_OPTIONAL_PRIOR_SAVED=true
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_GRID_SOUND_PRIOR_SAVED=true
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_GRID_ADVANCEMENT_PRIOR_SAVED=true
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_GRID_PARTIAL_PRIOR_SAVED=true
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_GRID_COMMAND_PRIOR_SAVED=true
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_ITEM_METADATA_PRIOR_SAVED=true
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_ITEM_COMPONENT_PRIOR_SAVED=true
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_ADVANCED_ITEM_PRIOR_SAVED=true
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_VANILLA_PRIOR_SAVED=true
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_NATIVE_CRAFT_GUARD_PRIOR_SAVED=true
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_SHAPE_VARIANTS_PASS
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_WORKBENCH_CHOICES_PASS
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_STATION_CHOICES_PASS
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_NATIVE_STONECUTTER_CONDITIONS_PASS
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_STONECUTTER_GUARD_PASS
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_VANILLA_STONECUTTER_GUARD_PASS
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_NATIVE_COOKING_GUARD_PASS
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_NATIVE_COOKING_EXTENSION_VETO_SYNTHETIC_PASS
+[14:41:28 INFO]: RW_NATIVE_COOKING_NO_START_PASS
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_VANILLA_COOKING_GUARD_PASS
+[14:41:28 INFO]: [93mRun /rw lockdown again within 30 seconds to confirm.[0m
+[14:41:28 INFO]: [93mRun /rw lockdown again within 30 seconds to confirm.[0m
+[14:41:28 INFO]: [93mRun /rw lockdown again within 30 seconds to confirm.[0m
+[14:41:28 INFO]: [93mRun /rw lockdown again within 30 seconds to confirm.[0m
+[14:41:28 INFO]: [93mRun /rw lockdown again within 30 seconds to confirm.[0m
+[14:41:28 INFO]: [93mRun /rw lockdown again within 30 seconds to confirm.[0m
+[14:41:28 INFO]: [93mRun /rw lockdown again within 30 seconds to confirm.[0m
+[14:41:28 INFO]: [93mRun /rw lockdown again within 30 seconds to confirm.[0m
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_STATION_WEIGHTED_PASS
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_STATION_STALE_RESULT_PASS
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_NATIVE_SMITHING_CONDITIONS_PASS
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_NATIVE_SMITHING_GUARD_PASS
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_STATION_EXTENSIONS_PASS
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_STATION_RULES_PASS
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_STATION_CONDITIONS_PASS
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_STATION_ACTIONS_PASS
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_STATION_METADATA_PASS
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_FULL_ITEM_DATA_STATION_PASS
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_STATION_INGREDIENTS_PASS
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_STATION_OPTIONAL_PASS
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_GRID_API_PASS
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_GRID_OPTIONS_PASS
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_GRID_CHOICES_PASS
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_GRID_RESULTS_PASS
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_GRID_USES_PASS
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_GRID_CONDITIONS_PASS
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_NATIVE_GRID_FALLBACK_PASS
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_GRID_OPTIONAL_PASS
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_GRID_SOUND_PASS
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_GRID_ADVANCEMENT_PASS
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_GRID_PARTIAL_PASS
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_GRID_CUSTOM_DATA_ONLY_MATCH_PASS
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_GRID_SHIFT_LIMIT_PASS
+[14:41:28 INFO]: [96mRecipeWeaver 3.7[37m | 10 workbench, 28 station, 32 grid | Purpur 1.20.6 | lockdown=false[0m
+[14:41:28 INFO]: [37mStartup read: PREFER_SQL_AT_STARTUP | loaded from LOCAL[0m
+[14:41:28 INFO]: [37mLast reload loaded from LOCAL[0m
+[14:41:28 INFO]: [96mRecipeWeaver 3.7[37m | 10 workbench, 28 station, 32 grid | Purpur 1.20.6 | lockdown=false[0m
+[14:41:28 INFO]: [37mStartup read: PREFER_SQL_AT_STARTUP | loaded from LOCAL[0m
+[14:41:28 INFO]: [37mLast reload loaded from LOCAL[0m
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_GRID_TRANSACTION_PASS
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_GRID_EXTENSIONS_PASS
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_GRID_COOLDOWN_PASS
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_GRID_METADATA_PASS
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_GRID_COMMON_COMPONENTS_PASS
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_GRID_CRAFT_LIMIT_PASS
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_GRID_SHULKER_NO_DUP_PASS
+[14:41:28 INFO]: [96mRecipeWeaver 3.7[37m | 10 workbench, 28 station, 32 grid | Purpur 1.20.6 | lockdown=false[0m
+[14:41:28 INFO]: [37mStartup read: PREFER_SQL_AT_STARTUP | loaded from LOCAL[0m
+[14:41:28 INFO]: [37mLast reload loaded from LOCAL[0m
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_MATCH_NAME_ONLY_PASS
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_MATCH_LORE_ONLY_PASS
+[14:41:28 INFO]: [RecipeWeaverSmoke] RW_MATCH_MODEL_ONLY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_MATCH_ENCHANTMENTS_ONLY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_MATCH_DAMAGE_ONLY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_MATCH_ITEM_FLAGS_ONLY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_MATCH_ATTRIBUTE_MODIFIERS_ONLY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_MATCH_UNBREAKABLE_ONLY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_MATCH_ARMOR_TRIM_ONLY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_MATCH_POTION_ONLY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_MATCH_STORED_ENCHANTMENTS_ONLY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_MATCH_BANNER_PATTERNS_ONLY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_MATCH_CROSSBOW_PROJECTILES_ONLY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_MATCH_FIREWORK_ROCKET_ONLY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_MATCH_FIREWORK_STAR_ONLY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_MATCH_BUNDLE_CONTENTS_ONLY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_ARMOR_TRIM_RESULT_COPY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_MAX_DURABILITY_RESULT_COPY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_COMPATIBLE_COMPONENT_RESULT_COPY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_POTION_BASE_RESULT_COPY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_STORED_ENCHANT_RESULT_COPY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_CROSSBOW_RESULT_COPY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_STEW_RESULT_COPY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_FIREWORK_RESULT_COPY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_TROPICAL_FISH_RESULT_COPY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_FIREWORK_STAR_RESULT_COPY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_WRITTEN_BOOK_RESULT_COPY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_COMPASS_RESULT_COPY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_BUNDLE_RESULT_COPY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_REPAIR_COST_RESULT_COPY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_AXOLOTL_RESULT_COPY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_KNOWLEDGE_BOOK_RESULT_COPY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_GOAT_HORN_RESULT_COPY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_OMINOUS_BOTTLE_RESULT_COPY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_MAP_RESULT_COPY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_BLOCK_ITEM_RESULT_COPY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_RESULT_NAME_TYPED_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_RESULT_MODERN_COMPONENTS_UNSUPPORTED_API
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_RESULT_FOOD_CONSUMPTION_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_RESULT_ATTRIBUTE_MODIFIER_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_RESULT_PERSISTENT_COMPOUND_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_COPY_MODEL_DATA_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_COPY_RICH_MODEL_DATA_UNSUPPORTED_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_COPY_USE_REMAINDER_UNSUPPORTED_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_COPY_USE_COOLDOWN_UNSUPPORTED_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_COPY_EQUIPPABLE_UNSUPPORTED_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_COPY_CUSTOM_DATA_REPLACEMENT_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_COPY_GLIDER_UNSUPPORTED_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_COPY_ADDITIONAL_TRADE_COST_UNSUPPORTED_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_COPY_MINIMUM_ATTACK_CHARGE_UNSUPPORTED_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_COPY_BREAK_SOUND_UNSUPPORTED_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_COPY_JUKEBOX_UNSUPPORTED_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_COPY_DAMAGE_RESISTANCE_UNSUPPORTED_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_COPY_WRITABLE_BOOK_PAGES_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_COPY_HEAD_PROFILE_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_COPY_HEAD_NOTE_SOUND_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_COPY_SHULKER_BLOCK_STATE_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_COPY_CUSTOM_DATA_ONLY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_COPY_MODEL_ONLY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_COPY_ENCHANTMENTS_ONLY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_COPY_FOOD_ONLY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_COPY_TOOL_ONLY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_COPY_ATTRIBUTE_MODIFIERS_ONLY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_COPY_DAMAGE_ONLY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_COPY_ITEM_FLAGS_ONLY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_COPY_UNBREAKABLE_ONLY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_COPY_ARMOR_TRIM_ONLY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_COPY_POTION_ONLY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_COPY_STORED_ENCHANTMENTS_ONLY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_COPY_BANNER_PATTERNS_ONLY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_COPY_CROSSBOW_PROJECTILES_ONLY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_COPY_FIREWORK_ROCKET_ONLY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_COPY_FIREWORK_STAR_ONLY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_COPY_BUNDLE_CONTENTS_ONLY_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_FULL_ITEM_DATA_GRID_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_GRID_COMMAND_PASS
+[14:41:29 INFO]: [RecipeWeaverSmoke] RW_GRID_EVENT_API_PASS
+[14:41:33 INFO]: [RecipeWeaverSmoke] RW_ITEM_METADATA_PASS
+[14:41:33 INFO]: [RecipeWeaverSmoke] RW_ITEM_FIELD_RULES_PASS
+[14:41:33 INFO]: [RecipeWeaverSmoke] RW_ITEM_MAP_LOCATION_MATCH_PASS
+[14:41:33 INFO]: [RecipeWeaverSmoke] RW_ITEM_MAP_LOCATION_COPY_PASS
+[14:41:33 INFO]: [RecipeWeaverSmoke] RW_ITEM_HEAD_SOUND_MATCH_PASS
+[14:41:33 INFO]: [RecipeWeaverSmoke] RW_ITEM_HEAD_SOUND_COPY_PASS
+[14:41:34 INFO]: [RecipeWeaverSmoke] RW_ITEM_COMPONENT_PASS
+[14:41:34 INFO]: [RecipeWeaverSmoke] RW_ITEM_COMPOUND_ARRAY_EDITOR_PASS
+[14:41:34 INFO]: [RecipeWeaverSmoke] RW_EDIT_AXOLOTL_PASS
+[14:41:34 INFO]: [RecipeWeaverSmoke] RW_EDIT_KNOWLEDGE_BOOK_PASS
+[14:41:34 INFO]: [RecipeWeaverSmoke] RW_EDIT_GOAT_HORN_PASS
+[14:41:34 INFO]: [RecipeWeaverSmoke] RW_EDIT_OMINOUS_BOTTLE_PASS
+[14:41:34 INFO]: [RecipeWeaverSmoke] RW_EDIT_BUNDLE_PASS
+[14:41:34 INFO]: [RecipeWeaverSmoke] RW_EDIT_REPAIR_COST_PASS
+[14:41:34 INFO]: [RecipeWeaverSmoke] RW_EDIT_BOOK_GENERATION_PASS
+[14:41:34 INFO]: [RecipeWeaverSmoke] RW_EDIT_BLOCK_ITEM_STATE_PASS
+[14:41:34 INFO]: [RecipeWeaverSmoke] RW_EDIT_ITEM_NAME_PASS
+[14:41:34 INFO]: [RecipeWeaverSmoke] RW_EDIT_PERSISTENT_LISTS_PASS
+[14:41:34 INFO]: [RecipeWeaverSmoke] RW_EDIT_ITEM_MODEL_UNSUPPORTED_PASS
+[14:41:34 INFO]: [RecipeWeaverSmoke] RW_EDIT_TOOLTIP_STYLE_UNSUPPORTED_PASS
+[14:41:34 INFO]: [RecipeWeaverSmoke] RW_EDIT_ENCHANTABLE_UNSUPPORTED_PASS
+[14:41:35 INFO]: [RecipeWeaverSmoke] RW_MATCH_ATTRIBUTE_MODIFIER_PASS
+[14:41:35 INFO]: [RecipeWeaverSmoke] RW_EDIT_ATTRIBUTE_MODIFIER_PASS
+[14:41:35 INFO]: [RecipeWeaverSmoke] RW_MATCH_ITEM_FLAGS_PASS
+[14:41:35 INFO]: [RecipeWeaverSmoke] RW_EDIT_PERSISTENT_COMPOUND_PASS
+[14:41:35 INFO]: [RecipeWeaverSmoke] RW_MATCH_PERSISTENT_COMPOUND_PASS
+[14:41:35 INFO]: [RecipeWeaverSmoke] RW_EDIT_ITEM_TEXT_PASS
+[14:41:35 INFO]: [RecipeWeaverSmoke] RW_EDIT_RICH_MODEL_DATA_UNSUPPORTED_PASS
+[14:41:35 INFO]: [RecipeWeaverSmoke] RW_EDIT_USE_REMAINDER_UNSUPPORTED_PASS
+[14:41:35 INFO]: [RecipeWeaverSmoke] RW_EDIT_USE_COOLDOWN_UNSUPPORTED_PASS
+[14:41:35 INFO]: [RecipeWeaverSmoke] RW_EDIT_EQUIPPABLE_UNSUPPORTED_PASS
+[14:41:35 INFO]: [RecipeWeaverSmoke] RW_EDIT_GLIDER_UNSUPPORTED_PASS
+[14:41:35 INFO]: [RecipeWeaverSmoke] RW_EDIT_TRADE_COST_UNSUPPORTED_PASS
+[14:41:35 INFO]: [RecipeWeaverSmoke] RW_EDIT_ATTACK_CHARGE_UNSUPPORTED_PASS
+[14:41:35 INFO]: [RecipeWeaverSmoke] RW_EDIT_BREAK_SOUND_UNSUPPORTED_PASS
+[14:41:35 INFO]: [RecipeWeaverSmoke] RW_EDIT_JUKEBOX_UNSUPPORTED_PASS
+[14:41:35 INFO]: [RecipeWeaverSmoke] RW_EDIT_DAMAGE_RESISTANCE_UNSUPPORTED_PASS
+[14:41:35 INFO]: [RecipeWeaverSmoke] RW_EDIT_WRITABLE_PAGES_PASS
+[14:41:35 INFO]: [RecipeWeaverSmoke] RW_EDIT_HEAD_PROFILE_PASS
+[14:41:35 INFO]: [RecipeWeaverSmoke] RW_EDIT_HEAD_NOTE_SOUND_PASS
+[14:41:35 INFO]: [RecipeWeaverSmoke] RW_EDIT_SHULKER_CONTENTS_PASS
+[14:41:35 INFO]: [RecipeWeaverSmoke] RW_EDIT_GROUPED_TOOL_REPLACE_PASS
+[14:41:35 INFO]: [RecipeWeaverSmoke] RW_EDIT_GROUPED_TOOL_REMOVE_PASS
+[14:41:35 INFO]: [RecipeWeaverSmoke] RW_EDIT_BUNDLE_APPEND_PASS
+[14:41:35 INFO]: [RecipeWeaverSmoke] RW_EDIT_BUNDLE_REPLACE_PASS
+[14:41:35 INFO]: [RecipeWeaverSmoke] RW_EDIT_BUNDLE_REMOVE_PASS
+[14:41:35 INFO]: [RecipeWeaverSmoke] RW_EDIT_BUNDLE_INVALID_INDEX_PASS
+[14:41:35 INFO]: [RecipeWeaverSmoke] RW_ADVANCED_ITEM_PASS
+[14:41:35 INFO]: [RecipeWeaverSmoke] RW_TYPED_ITEM_DATA_PASS
+[14:41:35 INFO]: [RecipeWeaverSmoke] RW_VANILLA_OVERRIDE_PASS
+[14:41:35 INFO]: [RecipeWeaverSmoke] RW_NATIVE_CRAFT_GUARD_PASS
+[14:41:35 INFO]: [RecipeWeaverSmoke] RW_WORKBENCH_CONDITIONS_PASS
+[14:41:36 INFO]: [RecipeWeaverSmoke] RW_ITEM_TEXT_PERSISTED_PASS
+[14:41:36 INFO]: [RecipeWeaverSmoke] RW_PERSIST_WRITABLE_PAGES_PASS
+[14:41:36 INFO]: [RecipeWeaverSmoke] RW_PERSIST_HEAD_PROFILE_PASS
+[14:41:36 INFO]: [RecipeWeaverSmoke] RW_PERSIST_HEAD_NOTE_SOUND_PASS
+[14:41:36 INFO]: [RecipeWeaverSmoke] RW_PERSIST_SHULKER_CONTENTS_PASS
+[14:41:36 INFO]: [RecipeWeaverSmoke] RW_PERSIST_GROUPED_TOOL_RULE_PASS
+[14:41:36 INFO]: [RecipeWeaverSmoke] RW_PERSIST_BUNDLE_SLOT_EDITOR_PASS
+[14:41:36 INFO]: [RecipeWeaverSmoke] RW_PERSIST_FIELD_MATCH_MODES_PASS
+[14:41:36 INFO]: [RecipeWeaverSmoke] RW_GRID_AMOUNT_PASS
+[14:41:36 INFO]: [RecipeWeaverSmoke] RW_RECIPE_ASYNC_PASS
+[14:41:36 WARN]: [spark] Timed out waiting for world statistics
+[14:41:36 INFO]: [RecipeWeaverSmoke] RW_STATION_GRID_ASYNC_PASS
+[14:41:37 INFO]: [RecipeWeaverSmoke] RW_GLOBAL_SETTINGS_API_PASS
+[14:41:37 INFO]: [93mRun /rw lockdown again within 30 seconds to confirm.[0m
+[14:41:37 INFO]: [93mRun /rw lockdown again within 30 seconds to confirm.[0m
+[14:41:37 INFO]: [RecipeWeaverSmoke] RW_SETTINGS_ASYNC_PASS
+[14:41:37 INFO]: [RecipeWeaverSmoke] RW_NATIVE_CATEGORY_PASS
+[14:41:37 INFO]: [RecipeWeaverSmoke] RW_CUSTOM_ONLY_NATIVE_BOOK_GUARD_PASS
+[14:41:37 INFO]: [RecipeWeaverSmoke] RW_NATIVE_BOOK_PASS
+[14:41:37 INFO]: [RecipeWeaverSmoke] RW_STONECUTTER_SELECTED_API_UNSUPPORTED_PASS
+[14:41:37 INFO]: [RecipeWeaverSmoke] RW_STONECUTTER_SELECTED_GUARD_UNSUPPORTED_PASS
+[14:41:38 INFO]: [RecipeWeaverSmoke] RW_BACKUP_ASYNC_PASS RecipeWeaver-backup-20261011-184137-02da286e.zip
+[14:41:38 INFO]: [RecipeWeaverSmoke] RW_STATION_DISCOVERY_PASS
+[14:41:38 INFO]: [RecipeWeaverSmoke] RW_FURNACE_AMBIGUOUS_DISCOVERY_PASS
+[14:41:38 INFO]: [RecipeWeaverSmoke] RW_FURNACE_CLICK_DISCOVERY_PASS
+[14:41:38 INFO]: [RecipeWeaverSmoke] RW_DISCOVERY_API_PASS
+[14:41:38 INFO]: [RecipeWeaverSmoke] RW_DISCOVERY_ASYNC_PASS
+[14:41:40 INFO]: Running delayed init tasks
+[14:41:40 INFO]: [92mRecipe lockdown is now true[0m
+[14:41:40 INFO]: [92mRecipe lockdown is now false[0m
+[14:41:40 INFO]: [92mRecipe lockdown is now true[0m
+[14:41:40 INFO]: [92mRecipe lockdown is now false[0m
+[14:41:40 INFO]: [92mRecipe lockdown is now true[0m
+[14:41:40 INFO]: [92mRecipe lockdown is now false[0m
+[14:41:40 INFO]: [92mRecipe lockdown is now true[0m
+[14:41:40 INFO]: [92mRecipe lockdown is now false[0m
+[14:41:40 INFO]: [92mRecipe lockdown is now true[0m
+[14:41:40 INFO]: [92mRecipe lockdown is now false[0m
+[14:41:40 INFO]: Done (20.318s)! For help, type "help"
+[14:41:40 WARN]: [RecipeWeaver] CONSOLE set lockdown=true
+[14:41:40 WARN]: [RecipeWeaver] CONSOLE set lockdown=false
+[14:41:40 WARN]: [RecipeWeaver] CONSOLE set lockdown=true
+[14:41:40 WARN]: [RecipeWeaver] CONSOLE set lockdown=false
+[14:41:40 WARN]: [RecipeWeaver] CONSOLE set lockdown=true
+[14:41:40 WARN]: [RecipeWeaver] CONSOLE set lockdown=false
+[14:41:40 WARN]: [RecipeWeaver] CONSOLE set lockdown=true
+[14:41:40 WARN]: [RecipeWeaver] CONSOLE set lockdown=false
+[14:41:40 WARN]: [RecipeWeaver] CONSOLE set lockdown=true
+[14:41:40 WARN]: [RecipeWeaver] CONSOLE set lockdown=false
+[14:41:41 INFO]: [RecipeWeaverSmoke] RW_ITEM_ASYNC_PASS
+[14:41:41 INFO]: [RecipeWeaverSmoke] RW_SMOKE_BACKUP_RESTORE_PASS RecipeWeaver-backup-20261011-184137-02da286e.zip
+[14:41:41 INFO]: [93mReloading RecipeWeaver data...[0m
+[14:41:41 INFO]: [93mCreating RecipeWeaver backup...[0m
+[14:41:41 INFO]: [92mRecipeWeaver data reloaded.[0m
+[14:41:42 INFO]: [92mBackup created: RecipeWeaver-backup-20261011-184141-b0c6d1f5.zip[0m
+[14:41:43 INFO]: [RecipeWeaverSmoke] RW_NATIVE_COOKING_ACTION_PASS
+[14:41:43 INFO]: [RecipeWeaverSmoke] RW_NATIVE_CAMPFIRE_PULSE_PASS
+[14:41:43 INFO]: [RecipeWeaverSmoke] RW_CAMPFIRE_POSTCOMMIT_EVENT_PASS
+[14:41:43 INFO]: [RecipeWeaverSmoke] RW_CAMPFIRE_DROP_MERGE_PASS
+[14:41:43 INFO]: [RecipeWeaverSmoke] RW_NATIVE_FURNACE_PHYSICAL_PASS
+[14:41:43 INFO]: [RecipeWeaverSmoke] RW_NATIVE_BLAST_PHYSICAL_PASS
+[14:41:43 INFO]: [RecipeWeaverSmoke] RW_NATIVE_SMOKER_PHYSICAL_PASS
+[14:41:43 INFO]: [RecipeWeaverSmoke] RW_NATIVE_COOKING_ACTION_DENIAL_PASS
+[14:41:43 INFO]: [RecipeWeaverSmoke] RW_NATIVE_COOKING_POSTCOMMIT_EVENT_PASS
+[14:41:43 INFO]: [RecipeWeaverSmoke] RW_CAMPFIRE_PICKUP_DISCOVERY_PASS
+[14:41:44 INFO]: [RecipeWeaverSmoke] RW_NATIVE_COOKING_ENVIRONMENT_PASS
+[14:41:44 INFO]: [RecipeWeaverSmoke] RW_NATIVE_COOKING_WEATHER_GUARD_PASS
+[14:41:45 INFO]: [RecipeWeaverSmoke] RW_NATIVE_CRAFTER_PHYSICAL_UNSUPPORTED_API
+[14:41:45 INFO]: [RecipeWeaverSmoke] RW_NATIVE_CRAFTER_1206_EXACT_PASS
+[14:41:45 INFO]: [RecipeWeaverSmoke] RW_NATIVE_COOKING_PLAYER_RULE_GUARD_PASS
+[14:41:45 INFO]: [RecipeWeaverSmoke] RW_NATIVE_CRAFTER_1206_DENIAL_PASS
+[14:41:47 INFO]: [RecipeWeaverSmoke] RW_NATIVE_CRAFTER_1206_VANILLA_CACHE_DENIAL_PASS
+[14:41:47 INFO]: [RecipeWeaverSmoke] RW_NATIVE_CRAFTER_PHYSICAL_PASS
+[14:41:53 INFO]: [RecipeWeaverSmoke] RW_SQL_STORE_PASS
+[14:41:53 INFO]: [RecipeWeaverSmoke] RW_SQL_GLOBAL_GUARD_PASS
+[14:41:53 INFO]: [RecipeWeaverSmoke] RW_SQL_CONCURRENT_GUARD_PASS
+[14:41:53 INFO]: [RecipeWeaverSmoke] RW_SQL_PRIOR_SAVED=true
+[14:41:53 INFO]: [RecipeWeaverSmoke] RW_RELOAD_ASYNC_PASS
+[14:41:53 INFO]: [RecipeWeaverSmoke] RW_RELOAD_COMMAND_PASS
+[14:41:53 INFO]: [RecipeWeaverSmoke] RW_BACKUP_COMMAND_PASS
+[14:41:53 INFO]: [93mListing RecipeWeaver backups...[0m
+[14:41:53 INFO]: RW_CAULDRON_PRIOR_SAVED=true
+[14:41:53 INFO]: [96mRecipeWeaver backups: 2247[0m
+[14:41:53 INFO]: [37mRecipeWeaver-backup-20261011-184141-b0c6d1f5.zip[0m
+[14:41:53 INFO]: [37mRecipeWeaver-backup-20261011-184140-60fcdb10.zip[0m
+[14:41:53 INFO]: [37mRecipeWeaver-backup-20261011-184137-02da286e.zip[0m
+[14:41:53 INFO]: [37mRecipeWeaver-backup-20261011-183504-ef71f7a6.dir[0m
+[14:41:53 INFO]: [37mRecipeWeaver-backup-20261011-183504-4df74ae4.zip[0m
+[14:41:53 INFO]: [37mRecipeWeaver-backup-20261011-183502-dcd7324b.zip[0m
+[14:41:53 INFO]: [37mRecipeWeaver-backup-20261011-183502-6f6800f0.dir[0m
+[14:41:53 INFO]: [37mRecipeWeaver-backup-20261011-183501-998acbd6.dir[0m
+[14:41:53 INFO]: [37mRecipeWeaver-backup-20261011-183501-038b97eb.dir[0m
+[14:41:53 INFO]: [37mRecipeWeaver-backup-20261011-183459-8de4e8c1.zip[0m
+[14:41:53 INFO]: [37mShowing the latest 10.[0m
+[14:41:53 INFO]: [93mRestore: /rw restore <backup-name> confirm[0m
+[14:41:54 INFO]: [RecipeWeaverSmoke] RW_CAULDRON_RUNTIME_PASS
+[14:41:54 INFO]: [RecipeWeaverSmoke] RW_CAULDRON_CONDITIONS_PASS
+[14:41:54 INFO]: [RecipeWeaverSmoke] RW_CAULDRON_WEIGHTED_PASS
+[14:41:55 INFO]: [RecipeWeaverSmoke] RW_CAULDRON_EXTENSIONS_PASS
+[14:41:55 INFO]: [RecipeWeaverSmoke] RW_CAULDRON_FIRST_AMOUNT_PERSISTED_PASS
+[14:41:55 INFO]: [RecipeWeaverSmoke] RW_CAULDRON_SECOND_AMOUNT_GUARD_PASS
+[14:41:55 INFO]: [RecipeWeaverSmoke] RW_CAULDRON_MULTI_AMOUNT_PASS
+[14:41:55 INFO]: [RecipeWeaverSmoke] RW_CAULDRON_REMAINDERS_PASS
+[14:41:55 INFO]: [RecipeWeaverSmoke] RW_CAULDRON_COPY_FIRST_PASS
+[14:41:56 INFO]: [RecipeWeaverSmoke] RW_CAULDRON_KEPT_SECOND_CHANGED_GUARD_PASS
+[14:41:56 INFO]: [RecipeWeaverSmoke] RW_CAULDRON_KEPT_SECOND_REMOVED_GUARD_PASS
+[14:41:56 INFO]: [RecipeWeaverSmoke] RW_CAULDRON_KEPT_SECOND_PASS
+[14:41:56 INFO]: [RecipeWeaverSmoke] RW_CAULDRON_WEIGHTED_COPY_SECOND_PASS
+[14:41:56 INFO]: [RecipeWeaverSmoke] RW_CAULDRON_ACTIONS_POSTCOMMIT_PASS
+[14:41:56 INFO]: RW_BREW_DISCOVERY_SLOT_RETAIN_PASS
+[14:41:56 INFO]: [RecipeWeaverSmoke] RW_BREW_RUNTIME_PASS
+[14:41:56 INFO]: [RecipeWeaverSmoke] RW_BREW_DISCOVERY_PASS
+[14:42:01 INFO]: [RecipeWeaverSmoke] RW_BREWING_RECIPE_CHANGE_PASS
+[14:42:08 INFO]: [RecipeWeaverSmoke] RW_BREWING_CONDITIONS_PASS
+[14:42:12 INFO]: [RecipeWeaverSmoke] RW_BREWING_WEIGHTED_PASS
+[14:42:16 INFO]: [RecipeWeaverSmoke] RW_BREWING_ADVANCED_RULES_PHYSICAL_PASS
+[14:42:23 INFO]: [RecipeWeaverSmoke] Brewing extension native start times: 6, cancelled stand: 6, denied stand: 386
+[14:42:23 INFO]: [RecipeWeaverSmoke] Brewing extension native event: ingredient=ItemStack{NETHER_WART x 2}, bottle=ItemStack{SPLASH_POTION x 1, POTION_META:{meta-type=POTION, potion-type=minecraft:water, custom-effects=[]}}, saved ingredient match=true, saved bottle match=true, expected bottle similar=false, results=[ItemStack{LINGERING_POTION x 1, POTION_META:{meta-type=POTION, display-name={"text":"","extra":["Extension native brew"]}}}, ItemStack{LINGERING_POTION x 1, POTION_META:{meta-type=POTION, display-name={"text":"","extra":["Extension native brew"]}}}, ItemStack{AIR x 0}]
+[14:42:26 INFO]: [RecipeWeaverSmoke] RW_NATIVE_BREW_CONDITION_VETO_PASS
+[14:42:29 INFO]: [RecipeWeaverSmoke] RW_NATIVE_BREW_LOCKDOWN_VETO_PASS
+[14:42:29 INFO]: [RecipeWeaverSmoke] RW_BREWING_EXTENSIONS_PASS
+[14:42:29 INFO]: [RecipeWeaverSmoke] RW_AUTOCRAFTER_SHAPELESS_EXACT_DENIAL_PASS
+[14:42:29 INFO]: [RecipeWeaverSmoke] RW_AUTOCRAFTER_SHAPED_EXACT_DENIAL_PASS
+[14:42:29 INFO]: [RecipeWeaverSmoke] RW_AUTOCRAFTER_RUNTIME_PASS
+[14:42:29 INFO]: [RecipeWeaverSmoke] RW_TABLE_ASYNC_PASS
+[14:42:30 INFO]: [RecipeWeaverSmoke] RW_RESTORE_ASYNC_PASS
+[14:42:30 INFO]: [93mRestoring RecipeWeaver backup...[0m
+[14:42:31 INFO]: [RecipeWeaverSmoke] RW_RESTORE_COMMAND_PASS
+[14:42:31 INFO]: [92mRestored RecipeWeaver-backup-20261011-184137-02da286e.zip. Previous data: RecipeWeaver-backup-20261011-184230-0f068997.zip[0m
+[14:42:31 WARN]: [RecipeWeaver] CONSOLE restored RecipeWeaver-backup-20261011-184137-02da286e.zip; previous data saved as RecipeWeaver-backup-20261011-184230-0f068997.zip
+[14:42:33 INFO]: [RecipeWeaverSmoke] RW_DIRECTORY_BACKUP_PASS
+[14:42:35 INFO]: [RecipeWeaverSmoke] RW_SQL_SNAPSHOT_PASS RecipeWeaver-backup-20261011-184234-c76b38b7.dir
+[14:42:36 INFO]: [RecipeWeaverSmoke] RW_SQL_MIRROR_PASS
+[14:42:36 WARN]: [RecipeWeaver] RecipeWeaver SQL mirror paused: H2 conflict: SQL copy changed; inspect sources and choose local or SQL
+[14:42:36 INFO]: [RecipeWeaver] RecipeWeaver H2 SQL mirror recovered
+[14:42:36 INFO]: [RecipeWeaverSmoke] RW_SQL_CONFLICT_CHOICE_PASS
+[14:42:37 INFO]: [RecipeWeaverSmoke] RW_MULTI_SQL_PASS
+[14:42:38 INFO]: [RecipeWeaverSmoke] RW_SQL_SOURCE_AUDIT_PASS SQLITE RecipeWeaver-backup-20261011-184237-2603d913.dir
+[14:42:38 INFO]: [RecipeWeaverSmoke] RW_SQL_EXACT_SOURCE_PASS
+[14:42:38 INFO]: [RecipeWeaverSmoke] RW_SQL_RECOVERY_POLICY_PASS
+[14:42:39 INFO]: [RecipeWeaverSmoke] RW_SQL_PREFERENCE_POLICY_PASS
+[14:42:39 INFO]: [RecipeWeaverSmoke] RW_SQL_RUNTIME_POLICY_PASS
+[14:42:40 WARN]: [RecipeWeaver] Reloaded from SQLITE; previous local files saved as RecipeWeaver-backup-20261011-184240-7ccba6fe.zip
+[14:42:40 INFO]: [RecipeWeaverSmoke] RW_SQL_RUNTIME_RELOAD_PASS
+[14:42:43 INFO]: [RecipeWeaverSmoke] RW_SQL_RUNTIME_NOOP_PASS
+[14:42:45 WARN]: [RecipeWeaver] Reloaded from SQLITE; previous local files saved as RecipeWeaver-backup-20261011-184244-fce486bd.zip
+[14:42:46 INFO]: [RecipeWeaverSmoke] RW_SQL_RAW_LOCAL_RELOAD_RECOVERY_PASS
+[14:42:47 WARN]: [RecipeWeaver] Skipped invalid SQLITE SQL reload source
+[14:42:48 INFO]: [RecipeWeaverSmoke] RW_SQL_RUNTIME_INVALID_FALLBACK_PASS
+[14:42:48 WARN]: [RecipeWeaver] RecipeWeaver SQL mirror paused: SQLITE conflict: SQL copy changed; inspect sources and choose local or SQL
+[14:42:48 INFO]: [RecipeWeaver] RecipeWeaver SQLITE SQL mirror recovered
+[14:42:48 INFO]: [RecipeWeaverSmoke] RW_SQL_CONFLICT_CHOICE_PASS
+[14:42:48 INFO]: [RecipeWeaverSmoke] RW_SQL_SETTINGS_MAIN_THREAD_PASS
+[14:42:48 INFO]: [RecipeWeaverSmoke] RW_REMOTE_SQL_PROFILE_PASS
+[14:42:48 INFO]: [RecipeWeaverSmoke] RW_SHUTDOWN_SAVE_QUEUED
+[14:42:48 INFO]: [RecipeWeaverSmoke] RW_SMOKE_PASS all API, registry, reload, restore, lockdown, and persistence checks
+[14:42:48 INFO]: Stopping server
+[14:42:48 INFO]: [RecipeWeaverSmoke] Disabling RecipeWeaverSmoke v3.7
+[14:42:48 INFO]: [spark] Disabling spark v1.10.192
+[14:42:49 INFO]: [RecipeWeaver] Disabling RecipeWeaver v3.7
+[14:42:49 INFO]: Saving players
+[14:42:49 INFO]: Saving worlds
+[14:42:49 INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[14:42:49 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[14:42:49 INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[14:42:49 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[14:42:49 INFO]: [ChunkHolderManager] Saved 59 block chunks, 59 entity chunks, 2 poi chunks in world 'world' in 0.09s
+[14:42:49 INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[14:42:49 INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[14:42:49 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[14:42:49 INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[14:42:49 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[14:42:49 INFO]: [ChunkHolderManager] Saved 49 block chunks, 49 entity chunks, 0 poi chunks in world 'world_nether' in 0.08s
+[14:42:49 INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[14:42:49 INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[14:42:49 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[14:42:49 INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[14:42:49 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[14:42:49 INFO]: [ChunkHolderManager] Saved 49 block chunks, 49 entity chunks, 0 poi chunks in world 'world_the_end' in 0.03s
+[14:42:49 INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[14:42:49 INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[14:42:49 INFO]: Flushing Chunk IO
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+[14:42:49 INFO]: Closing Thread Pool
+[14:42:49 INFO]: Closing Server

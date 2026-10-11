@@ -1,0 +1,20 @@
+gradle.projectsEvaluated {
+    def root = gradle.rootProject
+    def scanner = root.configurations.create('auditSpotbugs')
+    root.dependencies.add(scanner.name, 'com.github.spotbugs:spotbugs:4.10.4')
+    def modules = root.subprojects.findAll { it.name != 'smoke' }
+    root.tasks.register('auditSpotbugs', JavaExec) {
+        dependsOn modules.collect { it.tasks.named('classes') }
+        classpath = scanner
+        mainClass.set('edu.umd.cs.findbugs.LaunchAppropriateUI')
+        maxHeapSize = '2g'
+        doFirst {
+            def auxiliary = modules.collectMany { it.sourceSets.main.compileClasspath.files as List }.unique()
+            args '-textui', '-effort:max', '-low',
+                '-xml:withMessages=' + new File(root.rootDir, 'audit/spotbugs.xml').absolutePath,
+                '-auxclasspath', auxiliary.collect { it.absolutePath }.join(File.pathSeparator)
+            args modules.collectMany { it.sourceSets.main.output.classesDirs.files as List }
+                .collect { it.absolutePath }
+        }
+    }
+}

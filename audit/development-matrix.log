@@ -1,0 +1,12 @@
+DEVELOPMENT RUN paper-1.20.6
+PASS paper-1.20.6: API, grids, cauldron, brewing, auto-crafter, reload, lockdown, backup/restore, shutdown save
+DEVELOPMENT RUN purpur-1.20.6
+PASS purpur-1.20.6: API, grids, cauldron, brewing, auto-crafter, reload, lockdown, backup/restore, shutdown save
+DEVELOPMENT RUN spigot-1.20.6
+PASS spigot-1.20.6: API, grids, cauldron, brewing, auto-crafter, reload, lockdown, backup/restore, shutdown save
+DEVELOPMENT RUN paper-26.2
+PASS paper-26.2: API, grids, cauldron, brewing, auto-crafter, reload, lockdown, backup/restore, shutdown save
+DEVELOPMENT RUN purpur-26.2
+PASS purpur-26.2: API, grids, cauldron, brewing, auto-crafter, reload, lockdown, backup/restore, shutdown save
+DEVELOPMENT RUN spigot-26.2
+PASS spigot-26.2: API, grids, cauldron, brewing, auto-crafter, reload, lockdown, backup/restore, shutdown save

@@ -1,0 +1,3 @@
+allprojects {
+    layout.buildDirectory.set(new File(rootDir, "audit/build/" + project.name))
+}

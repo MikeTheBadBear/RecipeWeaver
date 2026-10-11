@@ -1,0 +1,140 @@
+RecipeWeaver code audit - 2026-10-11
+
+Outcome
+Reviewed the source and build configuration, ran the existing test suite,
+added focused regressions, fixed four confirmed bug areas, and built 3.7.
+This is an intermediate development hotfix. The full build-plan milestones
+and the planned 75-change release gate remain incomplete.
+No source review or automated suite can guarantee that software has no bugs.
+
+Scope
+106 production Java source files across api, adapters, and core; 68 core test
+files; 32 smoke source files; Gradle packaging and the server matrix script.
+Production areas included recipe matching and transactions, native station
+guards, GUI and prompt ownership, item metadata, persistence and asynchronous
+I/O, reload/backup rollback, SQL handling, optional integrations, and lifecycle
+cleanup. Existing historical release artifacts were inventoried before edits.
+
+Confirmed bugs fixed
+1. Advanced table native crafting bypassed RecipeWeaver recipe restrictions.
+   The world-only Bukkit craft-result API does not run the player crafting
+   event guard. The fallback now resolves the native key and checks disabled
+   vanilla keys, saved custom recipe identity, enabled/lockdown state, exact
+   inputs and outputs, and applicable player/world conditions before offering
+   a result. NativeCraftGuard supplies the same custom recipe checks used by
+   native crafting. Native recipe keys are retained for discovery handling.
+   Sources: GridMenus.java:1308; NativeGridCrafting.java:22.
+
+2. Advanced table native crafting lost overflow container returns.
+   Native resulting-matrix contents do not include separately returned overflow
+   items. The fallback now snapshots both collections, including glass bottles
+   from stacked honey bottles, and uses the existing atomic capacity check for
+   output plus returned items. Full inventories reject the transaction.
+   Sources: NativeGridCrafting.java:36; GridMenus.java:1546.
+   Regression coverage checks cloning, overflow, and inventory capacity. The
+   new live smoke probe checks the real server honey-bottle craft result.
+
+3. Anvil text prompts could leak their synthetic paper controls.
+   A submitted prompt previously lost ownership before its deferred close,
+   allowing another click to take a control. Native anvils also return their
+   input items on close. Ownership now survives pending acceptance; duplicate
+   clicks stay cancelled; controls are cleared on acceptance, close, replacement,
+   quit, and plugin shutdown. Closing after acceptance does not cancel the save.
+   Sources: TextPrompt.java:45,122,179; RecipeWeaverPlugin.java:253.
+
+4. Book prompts had a submit/cleanup race.
+   The temporary book previously stopped being protected before the scheduled
+   cleanup. Sessions now remain protected until cleanup, reject duplicate edits,
+   and suppress a deferred save if the session was explicitly cancelled.
+   Sources: BookPrompt.java:87,107,137.
+
+Executed build and test checks
+Final Gradle check, verifyBuildJar, smoke JAR build, and verifyReleaseJar passed.
+602 core tests in 63 suites: 580 passed, 22 skipped, zero failures or errors.
+Ten focused regression tests were added to the original 592-test suite.
+The 22 skips comprise 17 unsupported MockBukkit API cases and five opt-in
+external SQL tests without connection configuration. Exact test names are in
+skipped-tests.csv. Existing local SQLite/H2 round trips and async ordering,
+rollback, backup, reload, and shutdown tests ran in the suite/server probes.
+Logs: final-build.log, test-summary.json, release-verification.log.
+
+Static analysis
+SpotBugs 4.10.4 scanned 196 production classes with maximum effort and low
+priority findings enabled. It reported 223 warnings: 3 high, 189 medium,
+31 low. These are scanner findings, not 223 confirmed defects; the scan is
+not being represented as clean. Full XML and CSV findings are preserved.
+
+The dominant category is nullable Bukkit metadata return values (168 warnings).
+The high findings were reviewed: BlockDataMeta.setBlockData(null) is deliberate
+clearing supported by the local CraftBukkit 1.20.6 and 26.2 implementations
+and existing live metadata tests. The other two flag ItemMeta access in
+enchantment/rarity setters; current editor drafts are non-air and no reachable
+failure was established. They remain candidates for defensive hardening.
+Inventory-holder/event reference exposure is required live Bukkit state.
+Table/cauldron pending-write and crafter-counter warnings were checked against
+main-thread publication/ownership. SQL statement construction uses fixed table
+names and backend-specific fragments; document values use bound parameters.
+Other categories include deliberate exceptions, null sentinels, redundant
+checks, and low-priority code-quality findings; the raw list remains available
+for follow-up. No blanket claim is made that every warning is a false positive.
+
+The scanner could not resolve org.jetbrains.annotations.NotNull, Nullable,
+and org.bukkit.inventory.view.StonecutterView against the 1.20.6 compile
+classpath. There were no reported analysis errors. These missing auxiliary
+classes limit the completeness of static analysis. Logs: spotbugs-final.log,
+spotbugs.xml, spotbugs-findings.csv; baseline files are retained separately.
+
+Dependency advisory check
+OSV's live Maven querybatch API returned no matching published advisories for
+the eight directly bundled runtime artifacts: SQLite JDBC 3.53.4.0, H2 2.5.250,
+MySQL Connector/J 26.7.0, MariaDB 3.5.10, PostgreSQL 42.7.13, Microsoft SQL Server
+13.6.0.jre11, Oracle ojdbc11 23.26.3.0.0, and SLF4J API 2.0.17.
+This is a point-in-time advisory lookup, not proof of vulnerability-free code
+or an audit of the server's other plugins. Results: dependency-osv.json.
+API documentation: https://google.github.io/osv.dev/post-v1-querybatch/
+
+Package and retention
+Artifact: releases/RecipeWeaver-3.7.jar
+Size: 29,304,692 bytes
+SHA-256: 3BB76E0EC30CEF39D16AA29B272394978EED130054B7DF14C05DDA10F00B72C8
+Build and retained outputs match. Verified version/author, Java 21 plugin
+bytecode, all seven bundled JDBC entrypoints, and absence of smoke classes,
+invalid class filenames, duplicate entries, and stale signature metadata.
+All 88 original versioned JARs retain their original SHA-256; 89 now exist.
+Manifests: retained-jars-before.csv and source-changes.csv.
+
+Remaining verification boundaries
+Real player GUI clicks, inventory interactions, shift crafting, and every
+intermediate Minecraft version require client testing. The automated server
+probes combine real recipe engines/blocks with service calls and synthetic
+players/events; they do not represent a connected player's complete gameplay.
+ItemsAdder, Oraxen, and MMOItems live integration remains pending. This audit
+did not rerun external MySQL/PostgreSQL tests or establish live MariaDB,
+SQL Server, or Oracle behavior. See NEXT_RELEASE_WORK.md for existing feature
+and live-verification gaps, including broader SNBT editing, discovery,
+settings, remote SQL failure/concurrency, and optional integration work.
+
+Build environment
+Pre-existing build class directories were locked/read-only. The first standard
+build failed during cleanup; no historical artifacts were deleted. Final
+compilation used audit/isolated-build.init.gradle to put fresh build outputs
+under audit/build, then copied verified final JARs to the conventional paths.
+The final build reports deprecated APIs/Gradle features and a Java native-access
+warning from SQLite JDBC. These did not fail the checks; Gradle 10 compatibility
+has not been established. The project currently uses wrapper 9.7.1.
+
+Final server verification
+All 18 final runs passed: development, candidate release-mode, and retained-JAR
+modes on each of Paper, Purpur, and Spigot at Minecraft 1.20.6 and 26.2.
+Every run checked the installed production JAR SHA-256 against the final
+artifact above and required RW_NATIVE_GRID_FALLBACK_PASS. The checks also
+exercise API save/read, native recipes and guards, grids, cauldron, physical
+brewing and auto-crafter paths, reload, lockdown, backup/restore, prior-run
+persistence, and queued shutdown saves. Full per-mode stdout/stderr and matrix
+logs are archived under audit/matrix. A compact summary is matrix-summary.json.
+The earlier sequential development run preceded the last shutdown cleanup
+change; it is supplementary evidence. All 18 final archived runs use the
+identical final artifact hash recorded above.
+After verification, the test-only RecipeWeaverSmoke 3.7 JAR was archived out
+of all six active plugin folders. Final source hashes still match the built
+source; all earlier release hashes were independently verified unchanged.

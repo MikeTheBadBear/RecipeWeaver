@@ -1,0 +1,22 @@
+> Task :api:compileJava UP-TO-DATE
+> Task :adapters:compileJava UP-TO-DATE
+> Task :adapters:processResources NO-SOURCE
+> Task :adapters:classes UP-TO-DATE
+> Task :api:processResources NO-SOURCE
+> Task :api:classes UP-TO-DATE
+> Task :core:compileJava UP-TO-DATE
+> Task :core:processResources UP-TO-DATE
+> Task :core:classes UP-TO-DATE
+
+> Task :auditSpotbugs
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+The following classes needed for analysis were missing:
+  org.jetbrains.annotations.NotNull
+  org.jetbrains.annotations.Nullable
+  org.bukkit.inventory.view.StonecutterView
+
+BUILD SUCCESSFUL in 9s
+5 actionable tasks: 1 executed, 4 up-to-date
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.7.1/userguide/configuration_cache_enabling.html

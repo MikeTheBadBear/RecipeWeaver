@@ -1,0 +1,29 @@
+> Task :api:compileJava UP-TO-DATE
+> Task :adapters:compileJava UP-TO-DATE
+> Task :adapters:processResources NO-SOURCE
+> Task :adapters:classes UP-TO-DATE
+> Task :adapters:jar UP-TO-DATE
+> Task :api:processResources NO-SOURCE
+> Task :api:classes UP-TO-DATE
+> Task :api:jar UP-TO-DATE
+
+> Task :core:compileJava
+
+> Task :core:processResources UP-TO-DATE
+> Task :core:classes
+Note: C:\Users\Fixit\Documents\ChatGPT\22\core\src\main\java\dev\recipeweaver\core\StudioMenus.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+Note: Some input files use or override a deprecated API.
+> Task :core:compileTestJava
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :core:processTestResources NO-SOURCE
+> Task :core:testClasses
+> Task :core:test
+
+[Incubating] Problems report is available at: file:///C:/Users/Fixit/Documents/ChatGPT/22/audit/build/RecipeWeaver/reports/problems/problems-report.html
+
+BUILD SUCCESSFUL in 3s
+8 actionable tasks: 3 executed, 5 up-to-date
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.7.1/userguide/configuration_cache_enabling.html

@@ -1,0 +1,3 @@
+# Preserve the exact backed-up bytes, including recorded source/artifact hashes.
+* -text
+*.jar binary

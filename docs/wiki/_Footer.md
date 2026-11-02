@@ -1,0 +1,1 @@
+RecipeWeaver by **TM Game Studio** · Guide checked for **3.7** on **2 November 2026** · [Gameplay guide](https://github.com/MikeTheBadBear/RecipeWeaver/wiki/Gameplay) · [Repository](https://github.com/MikeTheBadBear/RecipeWeaver)
